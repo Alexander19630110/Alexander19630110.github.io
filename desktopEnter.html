@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>desktop</title>
+<meta charset="utf-8"> 
+ <style>
+  <!--
+   body {
+    background-color: WhiteSmoke; 
+    background-image: url("key.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+}
+  //-->
+  </style>
+</head>
+<body>
+
+  <h3 align="center">
+  Для доступа к ресурсу, пожалуйста, выполните вход
+  </h3>
+  <br>   <br>   <br>   <br>
+<div align="center" title="Enter">
+
+<!-- Форма -->  
+<form action="javascript: pass()">
+
+<!--   <select id="usr"  name="форма">
+    <option value="tmp" selected>Каталог изделий</option>
+    <option value="permanent">Страница разработчика</option>
+    <option value="tel">mobile</option>
+  </select>
+ -->  
+  <br><br>
+  Password:<br>
+<input id="parole" type="password" name="psw">
+  <input type="submit" value="Вход">
+</form>
+</div>
+</body>
+<script>
+ function pass(){
+  var enteredText=document.getElementById('parole').value;
+  //
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    
+    if(enteredText==xhttp.responseText) {
+	loadDoc('next.txt', myFunction);
+  } else{
+  again();
+  };
+  };
+  };
+  xhttp.open("GET", "temporary.txt", true);
+  xhttp.send();
+  }
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+  document.write(xhttp.responseText);
+}
+
+
+function again(){
+alert("Не верный пароль. Попробуйте еще раз");
+location.reload();
+}
+</script>
+</html>

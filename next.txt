@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Довідник</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="js/customers.js"></script>
+  <script src="js/polimers_data.js"></script>
+  <script src="js/recipy.js"></script>
+  <script src="js/reels_data.js"></script>
+  <script src="js/molds_data.js"></script>
+  <script src="js/products_data.js"></script>
+  <script src="js/scr_tabs_a.js"></script>
+</head>
+<body>
+<div style="width:100%; height: 55px; position: fixed; z-index: 5">
+<!-- NavBar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">>>></a>
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Замовники</a>
+      <div class="dropdown-menu">
+		  <a href="javascript:makeItemList('customer', roshen)" class="dropdown-item">ДП КК "Рошен"</a>
+		  <a href="javascript:makeItemList('customer', izum)" class="dropdown-item">ТОВ "РОШЕН ЕКСКЛЮЗИВ"</a>
+		  <a href="javascript:makeItemList('customer', malbi)" class="dropdown-item">Малби Фудз</a>
+		  <a href="javascript:makeItemList('customer', mondeliz)" class="dropdown-item">ПрАТ Монделис Украина</a>
+		  <a href="javascript:makeItemList('customer', svitoch)" class="dropdown-item">ПАТ ЛКФ Світоч</a>
+		  <a href="javascript:makeItemList('customer', vc)" class="dropdown-item">ТОВ Вінницька цукерка</a>
+		  <a href="javascript:makeItemList('customer', inkol)" class="dropdown-item">Інкол Інвест</a>
+		  <a href="javascript:makeItemList('customer', bucuria)" class="dropdown-item">АТ Букурия</a>
+		  <a href="javascript:makeItemList('customer', vatsak)" class="dropdown-item">ФОП Вацак Г.А.</a>
+		  <a href="javascript:makeItemList('customer', sovek)" class="dropdown-item">ТОВ СовєК</a>
+		  <a href="javascript:makeItemList('customer', olis)" class="dropdown-item">ООО фирма Олис Лтд</a>
+		  <a href="javascript:makeItemList('customer', akkarja)" class="dropdown-item">ТОВ Аккаржа плюс</a>
+		  <a href="javascript:makeItemList('customer', ecosnack)" class="dropdown-item">Эко Снек</a>
+		  <a href="javascript:makeItemList('customer', tiras)" class="dropdown-item">ТОВ "Тірас-12"</a>
+		  <a href="javascript:makeItemList('customer', valley)" class="dropdown-item">ТОВ ОДТ Сонячна Долина Трейд</a>
+		  <a href="javascript:makeItemList('customer', nv)" class="dropdown-item">ТОВ «Н-ВМЖК»</a>
+		  <a href="javascript:makeItemList('customer', mpz)" class="dropdown-item">Миронівський МПЗ "Легко"</a>
+		  <a href="javascript:makeItemList('customer', delicia)" class="dropdown-item">ПП "Деліція"</a>
+		  <a href="javascript:makeItemList('customer', ves)" class="dropdown-item">ТОВ "ВЕС"</a>
+		  <a href="javascript:makeItemList('customer', med)" class="dropdown-item">ТОВ «СП «Мед Поділля»</a>
+		  <a href="javascript:makeItemList('customer', vinsnek)" class="dropdown-item">ТОВ "ВІНСНЕК"</a>
+		  <a href="javascript:makeItemList('customer', delta)" class="dropdown-item">«Торгівельний Дім «Дельта»</a>
+		  <a href="javascript:makeItemList('customer', kriolit)" class="dropdown-item">ООО "Криолит-Д"</a>
+		  <a href="javascript:makeItemList('customer', fop_yav)" class="dropdown-item">ФОП Яворська I.М.</a>
+		  <a href="javascript:makeItemList('customer', fop_suh)" class="dropdown-item">ФОП Суханова О.С.</a>
+		  <a href="javascript:makeItemList('customer', sweet)" class="dropdown-item">"Sweet Country" LTD</a>
+		  <a href="javascript:makeItemList('customer', scu)" class="dropdown-item">ТОВ "СВІТ КОМПАНІ УКРАЇНА"</a>
+		  <a href="javascript:makeItemList('customer', tona)" class="dropdown-item">ТОВ фірма "Тона ЛТД"</a>
+		  <a href="javascript:makeItemList('customer', avk)" class="dropdown-item">ООО АВК Конфекшинери</a>
+		  <!-- 
+		  <a href="javascript:makeItemList('customer', odessa)" class="dropdown-item">ЗАТ Одесакондитер</a>
+		  <a href="javascript:makeItemList('customer', dTrade)" class="dropdown-item">ООО Д Трейд</a>
+		  <a href="javascript:makeItemList('customer', zhytomyr)" class="dropdown-item">ТД Житомирські ласощі</a>
+		  -->
+      </div>
+    </li>
+	  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Посуда</a>
+      <div class="dropdown-menu">
+		  <a href="javascript:makeItemList('series', 'cup')" class="dropdown-item">Стакани</a>
+		  <a href="javascript:makeItemList('series', 'plate')" class="dropdown-item">Тарілки</a>
+      </div>
+    </li>
+	
+	  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Тара</a>
+      <div class="dropdown-menu">
+		  <a href="javascript:makeItemList('series', 'mushroom')" class="dropdown-item">Контейнеры для грибов</a>
+		  <a href="javascript:makeItemList('series', 'mushroom_hu')" class="dropdown-item">Контейнеры для грибов (Венгрия)</a>
+		  <a href="javascript:makeItemList('series', 'berry')" class="dropdown-item">Контейнери для ягод</a>
+		  <a href="javascript:makeItemList('series', 'mayonez')" class="dropdown-item">Банки для майонезу</a>
+		  <a href="javascript:makeItemList('series', 'mustard')" class="dropdown-item">Банки для гірчиці</a>
+		  <a href="javascript:makeItemList('series', 'universal')" class="dropdown-item">Контейнери універсальні</a>
+		  <a href="javascript:makeItemList('series', 'milk')" class="dropdown-item">Упаковка для м'ясо-молочної продукціі</a>
+		  <a href="javascript:makeItemList('series', 'detergents')" class="dropdown-item">Упаковка для побутової хіміі</a>
+		  <a href="javascript:makeItemList('series', 'cake')" class="dropdown-item">Упаковка для тортів</a>
+		  <a href="javascript:makeItemList('series', 'other')" class="dropdown-item">Інша упаковка</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="javascript:makeMatList()">Матеріали</a>
+    </li>
+  </ul>
+</nav>
+<!--конец NavBar -->
+ </div>
+<!--
+<div style="width:90vw; height: 85vh; position: relative; top:55px; margin-left: auto; margin-right: auto">
+-->
+<div style="width:90vw; height: 85vh; position: fixed; top:55px; left: 5vw; margin-right: auto">
+
+<div class="border-right" style="width:25vw; height: 100%; float:left; top:1px; left: 2px; overflow: auto">
+<br>
+<div class="list-group" id="itemList">
+<!-- список изделий создается программно   -->
+</div>
+</div>
+<!-- центральная часть с рисунками -->
+<div id="midpart" class="border-right" style="width:40vw; height: 100%; float: left; overflow: auto">
+<br>
+<img id="image" src="pictures/image979.png" alt="Заставка" style="width:100%; display: block; margin-left: auto; margin-right: auto">
+</div>
+<!-- правая часть с информацией -->
+<div id="rightpart" style="width:25vw; height: 100%; float: left; overflow: auto">
+<br>
+</div>
+</div>
+</body>
+</html>

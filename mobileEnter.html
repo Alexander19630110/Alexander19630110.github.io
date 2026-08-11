@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mobile/css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="mobile/css/w3.css">
+	<script src="mobile/js/jquery-1.11.3.min.js"></script>
+	<script src="mobile/js/jquery.mobile-1.4.5.min.js"></script>
+	
+    <!-- <link href="css/themes/1/conf-room1.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/themes/1/jquery.mobile.icons.min.css" rel="stylesheet" /> -->
+    <!-- <link href="../../lib/jqm/1.4.4/jquery.mobile.structure-1.4.4.min.css" rel="stylesheet" /> -->
+    <link href="mobile/css/app.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<div data-role="page">
+        <div data-role="header" data-theme="c">
+            <p>Welcome</p>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Для доступа к ресурсу, пожалуйста, введите пароль</p>
+			
+<form action="javascript: pass()">			
+			
+            <label for="txt-password">Password</label>
+            <input type="password" name="txt-password" id="txt-password" value="">
+			            <a href="#" onclick="javascript: pass()" data-position-to="window" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Вход</a>
+
+</form>
+
+
+			<img src="key.png" style="width: 100%">
+ 
+		</div><!-- /content -->
+	</div><!-- /page -->
+</body>
+<script>
+  function pass(){
+  let enteredText=document.getElementById('txt-password').value;
+  //
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    
+    if(enteredText==xhttp.responseText) {
+	location.href='page.html';
+  } else{
+  again();
+  };
+  };
+  };
+  xhttp.open("GET", "temporary.txt", true);
+  xhttp.send();
+  }
+
+
+function again(){
+alert("Не верный пароль. Попробуйте еще раз");
+location.reload();
+}
+  
+</script>
+
+</html>
