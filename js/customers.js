@@ -1,0 +1,36 @@
+//12.12.22
+// JavaScript Document
+var roshen={abbr:'roshen', fullName:'ДП КК "Рошен"', eml:'', phone:'', logo:'RoshenLogo.png'};
+var avk={abbr:'avk', fullName:'ООО "АВК Конфекшинери"', eml:'', phone:'', logo:'logo-avk.png'};
+var mondeliz={abbr:'mondeliz', fullName:'ПрАТ "Монделис Украина"', eml:'', phone:'', logo:'mondelez.png'};
+var svitoch={abbr:'svitoch', fullName:'ПАТ "ЛКФ "Світоч"', eml:'', phone:'', logo:'Svitoch.jpg'};
+var vc={abbr:'vc', fullName:'ТОВ "Вінницька цукерка"', eml:'', phone:'', logo:'logo_vc.gif'};
+var odessa={abbr:'odessa', fullName:'ЗАТ "Одесакондитер"', eml:'', phone:'', logo:'odessa_logo.png'};
+var inkol={abbr:'inkol', fullName:'ТОВ Інкол Інвест', eml:'', phone:'', logo:'inkol_invest.png'};
+var bucuria={abbr:'bucuria', fullName:'АТ"Букурия"', eml:'', phone:'', logo:'bucuria_logo.jpg'};
+var dTrade={abbr:'dTrade', fullName:'ООО "Д Трейд"', eml:'', phone:'', logo:'dtrd.png'};
+var zhytomyr={abbr:'zhytomyr', fullName:'ТД "Житомирські ласощі"', eml:'', phone:'', logo:'logolasocshi.png'};
+var vatsak={abbr:'vatsak', fullName:'ФОП "Вацак Г.А."', eml:'', phone:'', logo:'vacak-logo.jpg'};
+var sovek={abbr:'sovek', fullName:'ТОВ "СовєК"', eml:'', phone:'', logo:'top_logo_sovek.png'};
+var olis={abbr:'olis', fullName:'ООО фирма "Олис Лтд"', eml:'', phone:'', logo:'olislogo.jpg'};
+var akkarja={abbr:'akkarja', fullName:'ТОВ "Аккаржа плюс"', eml:'', phone:'', logo:'akarja.png'};
+var ecosnack={abbr:'ecosnack', fullName:'ТОВ "Эко Снек"', eml:'', phone:'', logo:'bobsnail.jpg'};
+var valley={abbr:'valley', fullName:'ТОВ ОДТ Сонячна Долина Трейд', eml:'', phone:'', logo:'valley_logo.jpg'};
+var tiras={abbr:'tiras', fullName:'ТОВ "Тірас-12"', eml:'', phone:'', logo:'TIRAS-logo.png'};
+var anfol={abbr:'anfol', fullName:'ТОВ СП Анфол', eml:'', phone:'', logo:'anfol_logo.png'};
+var hu={abbr:'hu', fullName:'Венгрия', eml:'', phone:'', logo:'hu_round.png'};
+var malbi={abbr:'malbi', fullName:'Малби Фудз', eml:'', phone:'', logo:'malbi.jpg'};
+var izum={abbr:'izum', fullName:'ТОВ "РОШЕН ЕКСКЛЮЗИВ"', eml:'', phone:'', logo:'izum.png'};
+var nv={abbr:'nv', fullName:'ТОВ «Н-ВМЖК»', eml:'', phone:'', logo:'nv.jpeg'};
+var mpz={abbr:'mpz', fullName:'Миронівський МПЗ "Легко"', eml:'', phone:'', logo:'мхп_лого.svg'};
+var tona={abbr:'tona', fullName:'ТОВ фірма "Тона ЛТД"', eml:'', phone:'', logo:'tona.jpeg'};
+var delta={abbr:'delta', fullName:'«Торгівельний Дім «Дельта»', eml:'', phone:'', logo:'delta.jpeg'};
+var kriolit={abbr:'kriolit', fullName:'ООО "Криолит-Д"', eml:'', phone:'', logo:'kriolit_logo.png'};
+var delicia={abbr:'delicia', fullName:'ПП "Деліція"', eml:'', phone:'', logo:'delicia_logo.jpeg'};
+var ves={abbr:'ves', fullName:'ТОВ "ВЕС"', eml:'', phone:'', logo:'ves.png'};
+var med={abbr:'med', fullName:'ТОВ «СП «Мед Поділля»', eml:'', phone:'', logo:'med_logo.png'};
+var vinsnek={abbr:'vinsnek', fullName:'ТОВ "ВІНСНЕК"', eml:'', phone:'', logo:'sneck.webp'};
+var fop_yav={abbr:'fop_yav', fullName:'ФОП Яворська I.М.', eml:'', phone:'', logo:'yavor.png'};
+var fop_suh={abbr:'fop_suh', fullName:'ФОП Суханова О.С.', eml:'', phone:'', logo:'sukh.png'};
+var sweet={abbr:'sweet', fullName:'"Sweet Country" LTD', eml:'', phone:'', logo:'sweet_country.jpg'};
+var scu={abbr:'scu', fullName:'ТОВ "СВІТ КОМПАНІ УКРАЇНА"', eml:'', phone:'', logo:'scu_logo.png'};
